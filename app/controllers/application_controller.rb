@@ -9,5 +9,13 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
-  end
+  end 
+
+  get '/articles/new' do 
+
+  end  
+
+  post 'articles' do 
+    Article.new(title, content)
+  end 
 end
